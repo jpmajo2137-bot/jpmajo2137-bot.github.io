@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jpmajo2137-bot.github.io/sitemap.xml

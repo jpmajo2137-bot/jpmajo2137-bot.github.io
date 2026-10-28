@@ -3,7 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>WordGarden Apps</title>
+<meta name="description" content="Vocabulary apps that grow words like a garden: 워드가든 (English words for Korean speakers), Hardin ng Salita (English and Korean words in Tagalog) and Bustani ya Maneno (English and Korean in Swahili).">
+<link rel="canonical" href="https://jpmajo2137-bot.github.io/">
+<link rel="icon" type="image/png" href="icons/wordgarden.png">
+<link rel="apple-touch-icon" href="icons/wordgarden-512.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jpmajo2137-bot.github.io/">
+<meta property="og:site_name" content="WordGarden Apps">
+<meta property="og:title" content="WordGarden Apps">
+<meta property="og:description" content="Vocabulary apps that grow words like a garden: 워드가든, Hardin ng Salita: English, Hardin ng Salita: Korean and Bustani ya Maneno.">
+<meta property="og:image" content="https://jpmajo2137-bot.github.io/icons/wordgarden-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="WordGarden icon: a sprout growing from an open book">
+<meta name="twitter:card" content="summary">
 <style>
   :root { --bg:#f6f2e7; --ink:#1f2b22; --muted:#5f6f63; --leaf:#2f8a4c; --card:#fffdf7; --line:#e2dac3; }
   @media (prefers-color-scheme: dark) { :root { --bg:#0e1712; --ink:#edf4ec; --muted:#95ab9a; --leaf:#7dd28a; --card:#15231b; --line:#2a4234; } }
@@ -12,24 +27,178 @@
   h1 { font-size:28px; margin:0 0 4px; } .meta { color:var(--muted); font-size:14px; margin:0 0 24px; }
   section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 22px 14px; margin-top:16px; }
   h2 { font-size:19px; margin:14px 0 4px; } a { color:var(--leaf); }
+  h3 { font-size:17px; margin:0; }
+  .app { display:flex; gap:14px; align-items:flex-start; margin:14px 0 6px; }
+  .app + .app { border-top:1px solid var(--line); padding-top:14px; }
+  .app h2 { margin:0; }
+  .app p { margin:4px 0 0; }
+  .icon { width:60px; height:60px; border-radius:14px; flex:none; }
+  .tag { color:var(--muted); font-size:14px; }
+  .get { display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin:10px 0 2px; }
+  .get .badge { display:inline-block; line-height:0; }
+  .get .badge img { height:44px; width:auto; }
+  .pill { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; padding:6px 14px; border:1px solid var(--line); border-radius:999px; line-height:1.5; }
+  .soon { color:var(--muted); font-size:14px; padding:6px 14px; border:1px dashed var(--line); border-radius:999px; line-height:1.5; }
+  .links { font-size:15px; }
+  #beta .sub { color:var(--muted); font-size:15px; margin:0 0 6px; }
+  #beta ol { padding-left:22px; margin:6px 0; } #beta li { margin:6px 0; }
+  .optin { list-style:none; padding:0; margin:10px 0; }
+  .optin li { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:8px 0; border-top:1px solid var(--line); }
+  .optin li:last-child { border-bottom:1px solid var(--line); }
+  .optin img { width:32px; height:32px; border-radius:8px; }
+  .optin .name { font-weight:700; flex:1 1 180px; }
+  .optin a { font-weight:700; }
+  .tip { color:var(--muted); font-size:14px; }
+  hr { border:0; border-top:1px solid var(--line); margin:14px 0; }
+  [hidden] { display:none !important; } /* .optin li 의 display:flex 가 hidden 을 이기지 않게 */
+  :lang(ko) { word-break:keep-all; overflow-wrap:anywhere; }
+  @media (max-width:480px) { section { padding:6px 16px 14px; } .icon { width:48px; height:48px; border-radius:12px; } .app { gap:12px; } }
 </style>
 </head>
 <body>
 <main>
   <h1>🌱 WordGarden Apps</h1>
   <p class="meta">Vocabulary apps that grow words like a garden · Developer: Joung Hun Park · <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a></p>
-  <section>
-    <h2>워드가든: 영단어를 키우는 정원</h2>
-    <p>한국어로 배우는 영단어 15,000개. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/">개인정보처리방침</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/support/">고객 지원</a></p>
+
+  <section id="wordgarden" lang="ko">
+    <div class="app">
+      <img class="icon" src="icons/wordgarden.png" alt="" width="60" height="60">
+      <div>
+        <h2>워드가든</h2>
+        <p class="tag">한국어로 배우는 영단어 15,000개 · 스토어 이름 ‘워드가든: 영단어 암기·영어 단어 외우기’</p>
+        <p>2분 어휘력 테스트로 내 수준부터 시작하고, 잊을 때쯤 물을 주는 망각곡선 복습으로 영단어를 꽃처럼 키워요. 게임과 영어 이야기로 배운 단어를 다시 만나요. 회원가입 없이 무료, 학습 중엔 광고 없이.</p>
+        <div class="get">
+          <a class="badge" href="https://apps.apple.com/kr/app/id6825913827">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/ko-kr">
+              <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/ko-kr" alt="App Store에서 다운로드" width="143" height="44">
+            </picture>
+          </a>
+          <!-- Play 정식 출시 뒤: 아래 링크를 https://play.google.com/store/apps/details?id=com.wordgarden.app 배지로 바꾼다 -->
+          <a class="pill" href="#beta" data-pkg="com.wordgarden.app" data-play="Google Play에서 받기">Android: 베타 테스트 참여</a>
+        </div>
+        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/app/">내려받기 페이지</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/">개인정보처리방침</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/support/">고객 지원</a></p>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Bustani ya Maneno: Kiingereza na Kikorea</h2>
-    <p lang="sw">Jifunze Kiingereza na Kikorea kwa Kiswahili, hata bila intaneti. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/">Pakua</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Sera ya faragha</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/support/">Msaada</a></p>
+
+  <section id="bustani" lang="sw">
+    <div class="app">
+      <img class="icon" src="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/icon.png" alt="" width="60" height="60">
+      <div>
+        <h2>Bustani ya Maneno: Kiingereza na Kikorea</h2>
+        <p>Jifunze Kiingereza na Kikorea kwa Kiswahili, hata bila intaneti. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/">Pakua</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Sera ya faragha</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/support/">Msaada</a></p>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Hardin ng Salita: English · Hardin ng Salita: Korean</h2>
-    <p>English and Korean vocabulary in Tagalog. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/">Privacy policy</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/support/">Support</a></p>
+
+  <section id="hardin" lang="en">
+    <h2>Hardin ng Salita</h2>
+    <p class="tag"><span lang="fil">Matuto ng English at Korean sa Tagalog.</span> English and Korean vocabulary in Tagalog.</p>
+    <div class="app">
+      <img class="icon" src="icons/hardin-english.png" alt="" width="60" height="60">
+      <div>
+        <h3>Hardin ng Salita: English</h3>
+        <p class="tag">On Google Play: “Hardin: English Tagalog Vocab” · App Store: “Hardin ng Salita: English” · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/english/">Download page</a></p>
+        <p>15,000 English words with Tagalog meanings, example sentences, audio and memory tips. A 2-minute level test finds your starting point, and spaced repetition brings words back before you forget them. Works offline.</p>
+        <div class="get">
+          <!-- App Store 승인 뒤: 아래 span 을 en-us 배지 + https://apps.apple.com/app/id6825914166 링크로 바꾼다 -->
+          <span class="soon">App Store: coming soon</span>
+          <!-- Play 정식 출시 뒤: https://play.google.com/store/apps/details?id=com.wordgarden.tl.english -->
+          <a class="pill" href="#beta-en" data-pkg="com.wordgarden.tl.english" data-play="Get it on Google Play">Android: join the beta</a>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <img class="icon" src="icons/hardin-korean.png" alt="" width="60" height="60">
+      <div>
+        <h3>Hardin ng Salita: Korean</h3>
+        <p class="tag">On Google Play: “Hardin: EPS TOPIK Korean Vocab” · App Store: “Learn Korean: Hardin ng Salita” · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/korean/">Download page</a></p>
+        <p>15,000 Korean words with Tagalog meanings, romanization and audio, including 1,300+ words about work and money. Use it as your EPS-TOPIK and TOPIK vocabulary reviewer, and learn to read Hangul with Hangul 101. Works offline.</p>
+        <p class="tag">Independent app: not affiliated with HRD Korea, the Department of Migrant Workers (DMW) or NIIED (TOPIK).</p>
+        <div class="get">
+          <!-- App Store 승인 뒤: 아래 span 을 en-us 배지 + https://apps.apple.com/app/id6825914463 링크로 바꾼다 -->
+          <span class="soon">App Store: coming soon</span>
+          <!-- Play 정식 출시 뒤: https://play.google.com/store/apps/details?id=com.wordgarden.tl.korean -->
+          <a class="pill" href="#beta-en" data-pkg="com.wordgarden.tl.korean" data-play="Get it on Google Play">Android: join the beta</a>
+        </div>
+      </div>
+    </div>
+    <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/">Privacy policy</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/support/">Support</a></p>
+  </section>
+
+  <!-- Android 베타 칸: 내려받기 페이지와 같은 wordgarden-privacy/beta.json 을 따른다 (맨 아래 스크립트).
+       closed(기본값, 파일이 없거나 깨져도) = Gmail 주소를 메일로 받아 테스터 명단에 넣는다 · beta + 그룹 주소 = 그룹 가입 안내 · public = 그 앱은 Google Play 로 바로.
+       그래서 그룹이 아직 없어도 올릴 수 있다. 그룹을 만들어 세 Alpha 트랙에 붙이면 beta.json 만 바꾼다 (이 파일은 그대로). 세 앱이 모두 public 이면 이 칸은 저절로 숨는다. -->
+  <section id="beta">
+    <h2 lang="ko">Android 베타 참여</h2>
+    <p class="sub" lang="en">Join the Android beta: 워드가든 · Hardin ng Salita: English · Hardin ng Salita: Korean</p>
+
+    <div lang="ko">
+      <p>세 앱은 Google Play 에서 아직 비공개 테스트 중이에요. 정식으로 출시하려면 앱마다 테스터 12명이 14일 동안 참여해야 해요. 참여는 무료이고, 세 앱 모두 참여해 주시면 가장 큰 도움이 돼요.</p>
+      <ol>
+        <li data-mode="closed">Play 스토어에서 쓰는 Google(Gmail) 주소를 <a href="mailto:jpmajo2137@gmail.com?subject=Android%20%EB%B2%A0%ED%83%80%20%EC%B0%B8%EC%97%AC%20%28%EC%9B%8C%EB%93%9C%EA%B0%80%EB%93%A0%20%C2%B7%20Hardin%29&amp;body=Play%20%EC%8A%A4%ED%86%A0%EC%96%B4%EC%97%90%EC%84%9C%20%EC%93%B0%EB%8A%94%20Google%20%EA%B3%84%EC%A0%95%28Gmail%29%3A%20%0A%EC%B0%B8%EC%97%AC%ED%95%A0%20%EC%95%B1%3A%20%EC%9B%8C%EB%93%9C%EA%B0%80%EB%93%A0%20/%20Hardin%20ng%20Salita%3A%20English%20/%20Hardin%20ng%20Salita%3A%20Korean">jpmajo2137@gmail.com</a> 으로 보내 주세요. 테스터 명단에 넣고 답장 드릴게요. 받은 주소는 명단에 넣는 데에만 써요.</li>
+        <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">테스터 그룹에 가입</a>하세요. Play 스토어에서 쓰는 Google 계정으로 로그인한 뒤 'Join group'(그룹 가입)을 누르세요.</li>
+        <li><span data-mode="closed">답장을 받으면</span><span data-mode="beta" hidden>그다음</span> 아래에서 앱마다 '참여'를 열고 '테스터 되기'를 누른 뒤, '설치'로 Google Play 에서 받으세요.</li>
+        <li>14일 동안 지우지 말고 가끔 열어 주세요. 그 사이에 테스트에서 나가면 14일을 처음부터 다시 세요.</li>
+      </ol>
+    </div>
+
+    <ul class="optin">
+      <li data-pkg="com.wordgarden.app"><img src="icons/wordgarden.png" alt="" width="32" height="32"><span class="name" lang="ko">워드가든</span><a href="https://play.google.com/apps/testing/com.wordgarden.app"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.app"><span lang="ko">설치</span> · Install</a></li>
+      <li data-pkg="com.wordgarden.tl.english"><img src="icons/hardin-english.png" alt="" width="32" height="32"><span class="name">Hardin ng Salita: English</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.english"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.english"><span lang="ko">설치</span> · Install</a></li>
+      <li data-pkg="com.wordgarden.tl.korean"><img src="icons/hardin-korean.png" alt="" width="32" height="32"><span class="name">Hardin ng Salita: Korean</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.korean"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.korean"><span lang="ko">설치</span> · Install</a></li>
+    </ul>
+
+    <div id="beta-en" lang="en">
+      <p>These three apps are still in closed testing on Google Play. To launch publicly, each app needs 12 testers who stay in the test for 14 days. Joining is free, and joining all three helps the most.</p>
+      <ol>
+        <li data-mode="closed">Email the Google (Gmail) address you use on the Play Store to <a href="mailto:jpmajo2137@gmail.com?subject=Android%20beta%20%28WordGarden%20apps%29&amp;body=Google%20account%20%28Gmail%29%20I%20use%20on%20the%20Play%20Store%3A%20%0AApps%3A%20%EC%9B%8C%EB%93%9C%EA%B0%80%EB%93%A0%20/%20Hardin%20ng%20Salita%3A%20English%20/%20Hardin%20ng%20Salita%3A%20Korean">jpmajo2137@gmail.com</a>. I'll add you to the tester list and reply. Your address is used only for that list.</li>
+        <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">Join the tester group</a>. Sign in with the Google account you use on the Play Store, then tap “Join group”.</li>
+        <li><span data-mode="closed">After my reply, for</span><span data-mode="beta" hidden>For</span> each app above, open “Opt in” and tap “Become a tester”, then get the app with “Install”.</li>
+        <li>Keep the apps installed for 14 days and open them now and then. Leaving the test restarts the 14 days.</li>
+      </ol>
+    </div>
+
+    <hr>
+    <p class="tip" lang="ko">의견은 앱 오른쪽 위 ⚙ 설정 › '의견 보내기'(Hardin 은 'Magpadala ng puna')로 보내 주세요.<span data-mode="beta" hidden> 그룹 링크에서 'You don't have permission' 이 보이면 Google 에 로그인하지 않은 상태예요. 위쪽 Sign in(로그인)을 누른 뒤 그룹 링크를 다시 여세요.</span></p>
+    <p class="tip" lang="en">Feedback: ⚙ Settings › “의견 보내기” (워드가든) or “Magpadala ng puna” (Hardin) opens an email to me, or write to <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a>.<span data-mode="beta" hidden> Seeing “You don't have permission” on the group page? You are not signed in to Google: tap Sign in at the top of the page, then open the group link again.</span></p>
   </section>
 </main>
+<script>
+// Android 베타 칸은 내려받기 페이지와 같은 beta.json 을 따른다 (같은 규칙: 그룹 주소는 groups.google.com/g/<이름> 만 받는다).
+// 정적 HTML 이 기본값(closed = 메일 신청)이라, 파일이 없거나 깨졌거나 스크립트가 안 돌아도 맞는 안내가 보인다
+(function () {
+  var GROUP = /^https:\/\/groups\.google\.com\/g\/[a-z0-9][a-z0-9._-]{0,62}\/?$/
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)) }
+  function apply(cfg) {
+    if (!cfg || typeof cfg !== 'object' || !cfg.apps || typeof cfg.apps !== 'object') return
+    var group = typeof cfg.group === 'string' && GROUP.test(cfg.group) ? cfg.group : null
+    var open = 0, allBeta = true
+    all('[data-pkg]').forEach(function (el) {
+      var pkg = el.getAttribute('data-pkg'), s = cfg.apps[pkg]
+      if (s === 'public') {
+        if (el.tagName === 'A') { el.href = 'https://play.google.com/store/apps/details?id=' + pkg; el.textContent = el.getAttribute('data-play') }
+        else el.hidden = true
+      } else if (el.tagName === 'LI') {
+        open++
+        if (s !== 'beta') allBeta = false
+      }
+    })
+    var beta = document.getElementById('beta')
+    if (!open) { beta.hidden = true; return }
+    // 남은 앱이 모두 그룹으로 받을 때만 그룹 안내 (하나라도 메일이면 메일 안내 하나로)
+    var mode = group && allBeta ? 'beta' : 'closed'
+    all('#beta [data-mode]').forEach(function (el) { el.hidden = el.getAttribute('data-mode') !== mode })
+    if (mode === 'beta') all('#beta a.grp').forEach(function (a) { a.href = group })
+  }
+  if (window.fetch) {
+    fetch('/wordgarden-privacy/beta.json', { cache: 'no-cache', credentials: 'omit' })
+      .then(function (r) { return r.ok ? r.json() : null })
+      .then(apply)
+      .catch(function () {})
+  }
+})()
+</script>
 </body>
 </html>
