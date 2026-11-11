@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>WordGarden Apps</title>
-<meta name="description" content="Vocabulary apps that grow words like a garden: 워드가든 (English words for Korean speakers), Hardin ng Salita (English and Korean words in Tagalog) and Bustani ya Maneno (English and Korean in Swahili).">
+<meta name="description" content="Vocabulary apps that grow words like a garden: 워드가든, Hardin ng Salita, Bustani ya Maneno, Vườn Từ and WordGarden: Korean Vocabulary. Learn English or Korean words in Korean, Tagalog, Swahili, Vietnamese or English.">
 <link rel="canonical" href="https://jpmajo2137-bot.github.io/">
 <link rel="icon" type="image/png" href="icons/wordgarden.png">
 <link rel="apple-touch-icon" href="icons/wordgarden-512.png">
@@ -13,14 +13,20 @@
 <meta property="og:url" content="https://jpmajo2137-bot.github.io/">
 <meta property="og:site_name" content="WordGarden Apps">
 <meta property="og:title" content="WordGarden Apps">
-<meta property="og:description" content="Vocabulary apps that grow words like a garden: 워드가든, Hardin ng Salita: English, Hardin ng Salita: Korean and Bustani ya Maneno.">
+<meta property="og:description" content="Vocabulary apps that grow words like a garden: 워드가든, Hardin ng Salita, Bustani ya Maneno, Vườn Từ and WordGarden: Korean Vocabulary.">
 <meta property="og:image" content="https://jpmajo2137-bot.github.io/icons/wordgarden-512.png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
 <meta property="og:image:alt" content="WordGarden icon: a sprout growing from an open book">
 <meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":"https://jpmajo2137-bot.github.io/#website","url":"https://jpmajo2137-bot.github.io/","name":"WordGarden Apps","description":"Vocabulary apps that grow words like a garden","publisher":{"@id":"https://jpmajo2137-bot.github.io/#developer"}},
+ {"@type":"Person","@id":"https://jpmajo2137-bot.github.io/#developer","name":"Joung Hun Park","url":"https://jpmajo2137-bot.github.io/","email":"jpmajo2137@gmail.com"}
+]}
+</script>
 <style>
-  :root { --bg:#f6f2e7; --ink:#1f2b22; --muted:#5f6f63; --leaf:#2f8a4c; --card:#fffdf7; --line:#e2dac3; }
+  :root { --bg:#f6f2e7; --ink:#1f2b22; --muted:#5f6f63; --leaf:#26763f; --card:#fffdf7; --line:#e2dac3; }
   @media (prefers-color-scheme: dark) { :root { --bg:#0e1712; --ink:#edf4ec; --muted:#95ab9a; --leaf:#7dd28a; --card:#15231b; --line:#2a4234; } }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
   main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
@@ -39,15 +45,16 @@
   .get .badge img { height:44px; width:auto; }
   .pill { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; padding:6px 14px; border:1px solid var(--line); border-radius:999px; line-height:1.5; }
   .soon { color:var(--muted); font-size:14px; padding:6px 14px; border:1px dashed var(--line); border-radius:999px; line-height:1.5; }
+  .pill, .soon { display:inline-flex; align-items:center; box-sizing:border-box; min-height:44px; }
   .links { font-size:15px; }
   #beta .sub { color:var(--muted); font-size:15px; margin:0 0 6px; }
   #beta ol { padding-left:22px; margin:6px 0; } #beta li { margin:6px 0; }
   .optin { list-style:none; padding:0; margin:10px 0; }
-  .optin li { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:8px 0; border-top:1px solid var(--line); }
+  .optin li { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:4px 0; border-top:1px solid var(--line); }
   .optin li:last-child { border-bottom:1px solid var(--line); }
   .optin img { width:32px; height:32px; border-radius:8px; }
   .optin .name { font-weight:700; flex:1 1 180px; }
-  .optin a { font-weight:700; }
+  .optin a { font-weight:700; padding:9px 0; }
   .tip { color:var(--muted); font-size:14px; }
   hr { border:0; border-top:1px solid var(--line); margin:14px 0; }
   [hidden] { display:none !important; } /* .optin li 의 display:flex 가 hidden 을 이기지 않게 */
@@ -84,7 +91,7 @@
 
   <section id="bustani" lang="sw">
     <div class="app">
-      <img class="icon" src="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/icon.png" alt="" width="60" height="60">
+      <img class="icon" src="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/icon.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h2>Bustani ya Maneno: Kiingereza na Kikorea</h2>
         <p>Jifunze Kiingereza na Kikorea kwa Kiswahili, hata bila intaneti. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/">Pakua</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Sera ya faragha</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/support/">Msaada</a></p>
@@ -96,7 +103,7 @@
     <h2>Hardin ng Salita</h2>
     <p class="tag"><span lang="fil">Matuto ng English at Korean sa Tagalog.</span> English and Korean vocabulary in Tagalog.</p>
     <div class="app">
-      <img class="icon" src="icons/hardin-english.png" alt="" width="60" height="60">
+      <img class="icon" src="icons/hardin-english.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h3>Hardin ng Salita: English</h3>
         <p class="tag">On Google Play: “Hardin: English Tagalog Vocab” · App Store: “Hardin ng Salita: English” · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/english/">Download page</a></p>
@@ -110,7 +117,7 @@
       </div>
     </div>
     <div class="app">
-      <img class="icon" src="icons/hardin-korean.png" alt="" width="60" height="60">
+      <img class="icon" src="icons/hardin-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h3>Hardin ng Salita: Korean</h3>
         <p class="tag">On Google Play: “Hardin: EPS TOPIK Korean Vocab” · App Store: “Learn Korean: Hardin ng Salita” · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/korean/">Download page</a></p>
@@ -129,7 +136,7 @@
 
   <section id="wordgarden-korean" lang="en">
     <div class="app">
-      <img class="icon" src="icons/wordgarden-korean.png" alt="" width="60" height="60">
+      <img class="icon" src="icons/wordgarden-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h2>WordGarden: Korean Vocabulary</h2>
         <p class="tag">Learn Korean words in English, for English speakers everywhere</p>
@@ -143,7 +150,7 @@
     <h2>Vườn Từ</h2>
     <p class="tag">Học từ vựng bằng tiếng Việt</p>
     <div class="app">
-      <img class="icon" src="icons/vuontu-english.png" alt="" width="60" height="60">
+      <img class="icon" src="icons/vuontu-english.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h3>Vườn Từ: Học từ vựng tiếng Anh</h3>
         <p>Học từ vựng tiếng Anh với nghĩa tiếng Việt, ôn tập ngắt quãng, truyện và trò chơi. Dùng được khi không có mạng.</p>
@@ -151,7 +158,7 @@
       </div>
     </div>
     <div class="app">
-      <img class="icon" src="icons/vuontu-korean.png" alt="" width="60" height="60">
+      <img class="icon" src="icons/vuontu-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
       <div>
         <h3>Vườn Từ: Học tiếng Hàn EPS</h3>
         <p>Học từ vựng tiếng Hàn với nghĩa tiếng Việt, gồm bảng chữ cái Hangul và từ vựng cho EPS-TOPIK. Ứng dụng độc lập, không liên kết với HRD Korea.</p>
@@ -179,9 +186,9 @@
     </div>
 
     <ul class="optin">
-      <li data-pkg="com.wordgarden.app"><img src="icons/wordgarden.png" alt="" width="32" height="32"><span class="name" lang="ko">워드가든</span><a href="https://play.google.com/apps/testing/com.wordgarden.app"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.app"><span lang="ko">설치</span> · Install</a></li>
-      <li data-pkg="com.wordgarden.tl.english"><img src="icons/hardin-english.png" alt="" width="32" height="32"><span class="name">Hardin ng Salita: English</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.english"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.english"><span lang="ko">설치</span> · Install</a></li>
-      <li data-pkg="com.wordgarden.tl.korean"><img src="icons/hardin-korean.png" alt="" width="32" height="32"><span class="name">Hardin ng Salita: Korean</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.korean"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.korean"><span lang="ko">설치</span> · Install</a></li>
+      <li data-pkg="com.wordgarden.app"><img src="icons/wordgarden.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="name" lang="ko">워드가든</span><a href="https://play.google.com/apps/testing/com.wordgarden.app"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.app"><span lang="ko">설치</span> · Install</a></li>
+      <li data-pkg="com.wordgarden.tl.english"><img src="icons/hardin-english.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="name">Hardin ng Salita: English</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.english"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.english"><span lang="ko">설치</span> · Install</a></li>
+      <li data-pkg="com.wordgarden.tl.korean"><img src="icons/hardin-korean.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="name">Hardin ng Salita: Korean</span><a href="https://play.google.com/apps/testing/com.wordgarden.tl.korean"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.tl.korean"><span lang="ko">설치</span> · Install</a></li>
     </ul>
 
     <div id="beta-en" lang="en">
@@ -195,6 +202,8 @@
     </div>
 
     <hr>
+    <p class="tip" lang="ko">'참여'와 '설치' 링크는 Google 계정이 테스터로 등록된 뒤에, 그 계정으로 로그인해야 열려요. 그렇지 않으면 Google Play 에 '찾을 수 없음'(Not Found)이 나와요. 등록된 뒤에도 10~30분쯤 걸릴 수 있어요.</p>
+    <p class="tip" lang="en">The “Opt in” and “Install” links work only after your Google account has been added as a tester, and only while you are signed in with that account. Otherwise Google Play shows “Not Found”. After you are added, it can still take 10–30 minutes.</p>
     <p class="tip" lang="ko">의견은 앱 오른쪽 위 ⚙ 설정 › '의견 보내기'(Hardin 은 'Magpadala ng puna')로 보내 주세요.<span data-mode="beta" hidden> 그룹 링크에서 'You don't have permission' 이 보이면 Google 에 로그인하지 않은 상태예요. 위쪽 Sign in(로그인)을 누른 뒤 그룹 링크를 다시 여세요.</span></p>
     <p class="tip" lang="en">Feedback: ⚙ Settings › “의견 보내기” (워드가든) or “Magpadala ng puna” (Hardin) opens an email to me, or write to <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a>.<span data-mode="beta" hidden> Seeing “You don't have permission” on the group page? You are not signed in to Google: tap Sign in at the top of the page, then open the group link again.</span></p>
   </section>
