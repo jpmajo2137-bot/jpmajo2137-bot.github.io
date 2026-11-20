@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>WordGarden (워드가든): one vocabulary app, eight courses</title>
-<meta name="description" content="WordGarden (워드가든) is one vocabulary app with eight courses that grow words like a garden: learn English or Korean words in Korean, Tagalog, Swahili, Vietnamese or English. Its courses: 워드가든, Hardin ng Salita, Bustani ya Maneno, Vườn Từ and WordGarden: Korean.">
+<title>WordGarden (워드가든) — One Vocabulary App, Eight Courses</title>
+<meta name="description" content="WordGarden (워드가든) is one free offline vocabulary app with eight courses: learn 15,000+ English or Korean words in Korean, Tagalog, Swahili, Vietnamese or English. Includes v2.2 simple English explanations, 2-minute level test, spaced repetition, stories and games.">
 <link rel="canonical" href="https://jpmajo2137-bot.github.io/">
 <link rel="icon" type="image/png" href="icons/wordgarden.png">
 <link rel="apple-touch-icon" href="icons/wordgarden-512.png">
+<meta name="apple-itunes-app" content="app-id=6825913827">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jpmajo2137-bot.github.io/">
 <meta property="og:site_name" content="WordGarden">
-<meta property="og:title" content="WordGarden (워드가든)">
-<meta property="og:description" content="One vocabulary app, eight courses: learn English or Korean words in Korean, Tagalog, Swahili, Vietnamese or English.">
+<meta property="og:title" content="WordGarden (워드가든) — One App, Eight Vocabulary Courses">
+<meta property="og:description" content="Grow 15,000+ English or Korean words like a garden. Free, offline, no sign-up, with v2.2 simple English explanations across all 7 non-English courses.">
 <meta property="og:image" content="https://jpmajo2137-bot.github.io/icons/wordgarden-512.png">
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
@@ -22,236 +23,496 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"WebSite","@id":"https://jpmajo2137-bot.github.io/#website","url":"https://jpmajo2137-bot.github.io/","name":"WordGarden","description":"One vocabulary app with eight courses that grow words like a garden","publisher":{"@id":"https://jpmajo2137-bot.github.io/#developer"}},
+ {"@type":"MobileApplication","@id":"https://jpmajo2137-bot.github.io/#app","name":"WordGarden (워드가든)","operatingSystem":"iOS, Android","applicationCategory":"EducationApplication","softwareVersion":"2.2","downloadUrl":"https://apps.apple.com/app/id6825913827","inLanguage":["ko","en","fil","sw","vi"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@id":"https://jpmajo2137-bot.github.io/#developer"}},
  {"@type":"Person","@id":"https://jpmajo2137-bot.github.io/#developer","name":"Joung Hun Park","url":"https://jpmajo2137-bot.github.io/","email":"jpmajo2137@gmail.com"}
 ]}
 </script>
-<style>
-  :root { --bg:#f6f2e7; --ink:#1f2b22; --muted:#5f6f63; --leaf:#26763f; --card:#fffdf7; --line:#e2dac3; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0e1712; --ink:#edf4ec; --muted:#95ab9a; --leaf:#7dd28a; --card:#15231b; --line:#2a4234; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
-  h1 { font-size:28px; margin:0 0 4px; } .meta { color:var(--muted); font-size:14px; margin:0 0 24px; }
-  section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 22px 14px; margin-top:16px; }
-  h2 { font-size:19px; margin:14px 0 4px; } a { color:var(--leaf); }
-  h3 { font-size:17px; margin:0; }
-  .app { display:flex; gap:14px; align-items:flex-start; margin:14px 0 6px; }
-  .app + .app { border-top:1px solid var(--line); padding-top:14px; }
-  .app h2 { margin:0; }
-  .app p { margin:4px 0 0; }
-  .icon { width:60px; height:60px; border-radius:14px; flex:none; }
-  .tag { color:var(--muted); font-size:14px; }
-  .get { display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin:10px 0 2px; }
-  .get .badge { display:inline-block; line-height:0; }
-  .get .badge img { height:44px; width:auto; }
-  .pill { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; padding:6px 14px; border:1px solid var(--line); border-radius:999px; line-height:1.5; }
-  .soon { color:var(--muted); font-size:14px; padding:6px 14px; border:1px dashed var(--line); border-radius:999px; line-height:1.5; }
-  .pill, .soon { display:inline-flex; align-items:center; box-sizing:border-box; min-height:44px; }
-  .links { font-size:15px; }
-  #beta .sub { color:var(--muted); font-size:15px; margin:0 0 6px; }
-  #beta ol { padding-left:22px; margin:6px 0; } #beta li { margin:6px 0; }
-  .optin { list-style:none; padding:0; margin:10px 0; }
-  .optin li { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:4px 0; border-top:1px solid var(--line); }
-  .optin li:last-child { border-bottom:1px solid var(--line); }
-  .optin img { width:32px; height:32px; border-radius:8px; }
-  .optin .name { font-weight:700; flex:1 1 180px; }
-  .optin a { font-weight:700; padding:9px 0; }
-  .tip { color:var(--muted); font-size:14px; }
-  hr { border:0; border-top:1px solid var(--line); margin:14px 0; }
-  [hidden] { display:none !important; } /* .optin li 의 display:flex 가 hidden 을 이기지 않게 */
-  :lang(ko) { word-break:keep-all; overflow-wrap:anywhere; }
-  @media (max-width:480px) { section { padding:6px 16px 14px; } .icon { width:48px; height:48px; border-radius:12px; } .app { gap:12px; } }
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<main>
-  <h1>🌱 WordGarden</h1>
-  <p class="meta">One vocabulary app, eight courses: words that grow like a garden · Developer: Joung Hun Park · <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a></p>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- 2.0 (2026-11-16 App Store 공개)부터 앱은 하나다: 워드가든(WordGarden) 안에 여덟 과정. 아래 칸들은 '앱'이 아니라 그 앱의 과정이다. -->
-  <section id="app" lang="en">
-    <div class="app">
-      <img class="icon" src="icons/wordgarden.png" alt="" width="60" height="60">
-      <div>
-        <h2>WordGarden (<span lang="ko">워드가든</span>)</h2>
-        <p class="tag">One app, eight courses: English or Korean vocabulary, taught in Korean, Tagalog, Swahili, Vietnamese or English</p>
-        <p>From version 2.0, the courses below are inside one app. On the app's first screen, choose the language you speak, then the language you want to learn. Each course keeps its own progress, and you can change course in Settings.</p>
-        <p lang="ko">버전 2.0부터 아래 과정이 모두 앱 하나에 들어 있어요. 앱을 처음 열 때 나오는 화면에서 내가 쓰는 말과 배울 말을 고르면 돼요. 학습 기록은 과정마다 따로 남고, 설정에서 과정을 바꿀 수 있어요.</p>
-        <div class="get">
-          <a class="pill" href="https://apps.apple.com/app/id6825913827">Download on the App Store</a>
-          <!-- Play 정식 출시 뒤: wordgarden-privacy/beta.json 의 com.wordgarden.app 을 "public" 으로 바꾸면 아래 링크가 Google Play 로 바뀐다 (이 파일은 그대로) -->
-          <a class="pill" href="#beta-en" data-pkg="com.wordgarden.app" data-play="Get it on Google Play">Android: join the beta</a>
-        </div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#app">
+      <img src="icons/wordgarden.png" alt="" width="36" height="36">
+      <span id="brand-name">WordGarden</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a id="nav-try" href="#try">Try it</a>
+      <a id="nav-how" href="#how">How it works</a>
+      <a id="nav-features" href="#features">Features</a>
+      <a id="nav-screens" href="#screens">Screens</a>
+      <a id="nav-courses" href="#courses">8 Courses</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ko" aria-pressed="false" lang="ko">한국어</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="fil" aria-pressed="false" lang="fil">TL</button>
+        <button type="button" class="lang-btn" data-lang="sw" aria-pressed="false" lang="sw">SW</button>
+        <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false" lang="vi">VI</button>
       </div>
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" hidden aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round"/>
+        </svg>
+        <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
-  </section>
+  </div>
+</header>
 
-  <section id="wordgarden" lang="ko">
-    <div class="app">
-      <img class="icon" src="icons/wordgarden.png" alt="" width="60" height="60">
+<main id="main">
+  <!-- ===================== Hero (#app) ===================== -->
+  <section class="hero" id="app">
+    <div class="wrap hero-grid">
       <div>
-        <h2>워드가든</h2>
-        <p class="tag">한국어로 배우는 영단어 15,000개 · 스토어 이름 ‘워드가든: 영단어 암기·영어 단어 외우기’</p>
-        <p>2분 어휘력 테스트로 내 수준부터 시작하고, 잊을 때쯤 물을 주는 망각곡선 복습으로 영단어를 꽃처럼 키워요. 게임과 영어 이야기로 배운 단어를 다시 만나요. 회원가입 없이 무료, 학습 중엔 광고 없이.</p>
-        <p class="tag">워드가든 앱 하나에 여러 과정이 들어 있어요. 이 한국어 → 영어 과정은 앱을 처음 열 때 나오는 화면에서 ‘영어’를 고르면 시작돼요.</p>
-        <div class="get">
-          <a class="badge" href="https://apps.apple.com/kr/app/id6825913827">
-            <picture>
-              <source media="(prefers-color-scheme: dark)" srcset="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/ko-kr">
-              <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/ko-kr" alt="App Store에서 다운로드" width="143" height="44">
-            </picture>
+        <a class="release-pill" href="#features">
+          <span class="badge-new" id="hero-pill-new">New in v2.2</span>
+          <span id="hero-pill-text">Simple English explanations on every word across all 7 non-English courses</span>
+        </a>
+        <h1 id="hero-h1">Grow your vocabulary<br>like a living garden</h1>
+        <p class="hero-sub" id="hero-sub">One free, offline app with eight English and Korean vocabulary courses. Find your level in 2 minutes, water words right before you forget them, and build lasting memory with stories and games.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id6825913827">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM15.97 6.33c.68-.83 1.14-1.98 1.01-3.13-.98.04-2.17.65-2.87 1.48-.63.72-1.18 1.9-1.03 3.02 1.09.08 2.21-.55 2.89-1.37z"/></svg>
+            <span id="hero-ios-label">Download on the App Store</span>
           </a>
-          <a class="pill" href="#beta" data-pkg="com.wordgarden.app" data-play="Google Play에서 받기">Android: 베타 테스트 참여</a>
+          <a class="btn btn-secondary" id="hero-android" href="#beta" data-pkg="com.wordgarden.app" data-play="Get it on Google Play">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a1.5 1.5 0 01-.61-1.21V3.024c0-.49.236-.934.61-1.21zm1.422-.716l11.275 6.445-2.828 2.828L5.032 1.098zm12.567 7.184l2.753 1.573c.864.494.864 1.796 0 2.29l-2.753 1.573-3.134-2.718 3.134-2.718zM5.032 22.902l8.447-9.273 2.828 2.828-11.275 6.445z"/></svg>
+            <span id="hero-android-label">Android: Join the beta</span>
+          </a>
         </div>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/app/">내려받기 페이지</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/">개인정보처리방침</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/support/">고객 지원</a></p>
+        <a class="hero-try-link" href="#try">
+          <span id="hero-try-label">Try a live word card</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+
+        <ul class="trust-chips" id="hero-chips">
+          <li>Free · No sign-up</li>
+          <li>No ads while studying</li>
+          <li>Works 100% offline</li>
+          <li>One app · 8 courses</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-stage">
+          <div class="hero-shot-card" role="button" tabindex="0" aria-label="Zoom screenshot">
+            <img id="hero-shot-img" src="screenshots/en/s1.webp" alt="WordGarden home screen showing words growing in a garden" width="540" height="960" data-shot-index="0">
+          </div>
+        </div>
+
+        <div class="hero-scene-tabs" id="hero-scene-tabs" role="tablist" aria-label="App preview screens"></div>
       </div>
     </div>
   </section>
 
-  <section id="bustani" lang="sw">
-    <div class="app">
-      <img class="icon" src="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/icon.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h2>Bustani ya Maneno: Kiingereza na Kikorea</h2>
-        <p>Jifunze Kiingereza na Kikorea kwa Kiswahili, hata bila intaneti. <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/">Pakua</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Sera ya faragha</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/support/">Msaada</a></p>
-        <p class="tag">Bustani ya Maneno sasa ni sehemu ya programu ya WordGarden (<span lang="ko">워드가든</span>). Kwenye skrini ya kwanza ya programu, chagua “Kiswahili” kuwa lugha yako, kisha uchague Kiingereza au Kikorea.</p>
+  <!-- ===================== Key Metrics Strip ===================== -->
+  <div class="metrics-band">
+    <div class="wrap metrics-grid" id="metrics-grid">
+      <div class="metric-item"><div class="metric-num">15,000+</div><div class="metric-label">Words per course</div></div>
+      <div class="metric-item"><div class="metric-num">8 courses</div><div class="metric-label">5 UI languages · 1 app</div></div>
+      <div class="metric-item"><div class="metric-num">2 min</div><div class="metric-label">Placement level test</div></div>
+      <div class="metric-item"><div class="metric-num">15 + 3</div><div class="metric-label">Story chapters &amp; games</div></div>
+    </div>
+  </div>
+
+  <!-- ===================== Interactive WordGarden Studio (#try) ===================== -->
+  <section class="section-pad" id="try">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="studio-eyebrow">Interactive preview</span>
+        <h2 id="studio-h2">Experience WordGarden v2.2 right here</h2>
+        <p id="studio-sub">Pick any of the eight courses to explore real vocabulary cards, toggle the new v2.2 simple English explanations, or try a review quiz that grows your plant.</p>
+      </div>
+
+      <div class="studio-shell">
+        <div class="course-pills" id="course-pills" role="group" aria-label="Choose a course"></div>
+
+        <div class="studio-mode-bar">
+          <div class="mode-tabs" role="tablist" aria-label="Preview mode">
+            <button type="button" class="mode-tab" id="mode-card-btn" role="tab" aria-selected="true">Word card + v2.2 EN gloss</button>
+            <button type="button" class="mode-tab" id="mode-quiz-btn" role="tab" aria-selected="false">v2.2 Explanation quiz</button>
+          </div>
+          <label class="toggle-wrap" id="en-toggle-wrap">
+            <span id="en-toggle-label">v2.2 English explanation</span>
+            <button type="button" class="toggle-switch" id="en-toggle-btn" role="switch" aria-checked="true" aria-labelledby="en-toggle-label"></button>
+          </label>
+        </div>
+
+        <div id="studio-stage"></div>
       </div>
     </div>
   </section>
 
-  <section id="hardin" lang="en">
-    <h2>Hardin ng Salita</h2>
-    <p class="tag"><span lang="fil">Matuto ng English at Korean sa Tagalog.</span> English and Korean vocabulary in Tagalog.</p>
-    <div class="app">
-      <img class="icon" src="icons/hardin-english.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h3>Hardin ng Salita: English</h3>
-        <p>15,000 English words with Tagalog meanings, example sentences, audio and memory tips. A 2-minute level test finds your starting point, and spaced repetition brings words back before you forget them. Works offline.</p>
-        <p class="tag" lang="fil">Ang Hardin ng Salita: English ay isa na ngayong kurso sa loob ng app na WordGarden (<span lang="ko">워드가든</span>). Sa unang screen ng app, piliin ang “Tagalog” bilang wika mo, tapos piliin ang “English”.</p>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/english/">Download page</a></p>
+  <!-- ===================== 6-Stage Growth Garden (#how) ===================== -->
+  <section class="section-pad section-alt" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="how-eyebrow">Forgetting-curve garden</span>
+        <h2 id="how-h2">From seed to fruit in 6 memory stages</h2>
+        <p id="how-sub">Spaced repetition brings each word back right before you forget it. Tap a stage to see how memory takes root.</p>
       </div>
-    </div>
-    <div class="app">
-      <img class="icon" src="icons/hardin-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h3>Hardin ng Salita: Korean</h3>
-        <p>15,000 Korean words with Tagalog meanings, romanization and audio, including 1,300+ words about work and money. Use it as your EPS-TOPIK and TOPIK vocabulary reviewer, and learn to read Hangul with Hangul 101. Works offline.</p>
-        <p class="tag">Independent app: not affiliated with HRD Korea, the Department of Migrant Workers (DMW) or NIIED (TOPIK).</p>
-        <p class="tag" lang="fil">Ang Hardin ng Salita: Korean ay isa na ngayong kurso sa loob ng app na WordGarden (<span lang="ko">워드가든</span>). Sa unang screen ng app, piliin ang “Tagalog” bilang wika mo, tapos piliin ang “Korean”.</p>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/korean/">Download page</a></p>
-      </div>
-    </div>
-    <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/">Privacy policy</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/support/">Support</a></p>
-  </section>
 
-  <section id="wordgarden-korean" lang="en">
-    <div class="app">
-      <img class="icon" src="icons/wordgarden-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h2>WordGarden: Korean Vocabulary</h2>
-        <p class="tag">Learn Korean words in English, for English speakers everywhere</p>
-        <p>Start with the Korean alphabet, then grow your vocabulary with a 2-minute level test, spaced repetition, stories and games. Works offline.</p>
-        <p class="tag">WordGarden: Korean is now a course inside the WordGarden (<span lang="ko">워드가든</span>) app. On the app's first screen, choose “English” as the language you speak, then choose “Korean”.</p>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/app/">Download page</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/">Privacy policy</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/support/">Support</a></p>
+      <div class="stages-grid" id="stages-grid" role="group" aria-label="6 memory growth stages"></div>
+
+      <div class="stage-detail" aria-live="polite">
+        <div id="stage-detail-svg"></div>
+        <p id="stage-detail-text"></p>
       </div>
     </div>
   </section>
 
-  <section id="vuontu" lang="vi">
-    <h2>Vườn Từ</h2>
-    <p class="tag">Học từ vựng bằng tiếng Việt</p>
-    <div class="app">
-      <img class="icon" src="icons/vuontu-english.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h3>Vườn Từ: Học từ vựng tiếng Anh</h3>
-        <p>Học từ vựng tiếng Anh với nghĩa tiếng Việt, ôn tập ngắt quãng, truyện và trò chơi. Dùng được khi không có mạng.</p>
-        <p class="tag">Vườn Từ: Tiếng Anh nay là một khóa học trong ứng dụng WordGarden (<span lang="ko">워드가든</span>). Ở màn hình đầu tiên của ứng dụng, hãy chọn “Tiếng Việt” làm ngôn ngữ của bạn, rồi chọn “Tiếng Anh”.</p>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/english/">Trang tải ứng dụng</a></p>
+  <!-- ===================== v2.2 Spotlight + Core Features (#features) ===================== -->
+  <section class="section-pad" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="feat-eyebrow">Built for real retention</span>
+        <h2 id="feat-h2">Everything you need, nothing in your way</h2>
+        <p id="feat-sub">No accounts, no subscriptions, and zero ads during study—just calm daily sessions that compound.</p>
+      </div>
+
+      <div class="v22-banner">
+        <div>
+          <span class="v22-badge" id="v22-badge">What’s new in v2.2</span>
+          <h3 id="v22-title">Simple English explanations on every word</h3>
+          <p id="v22-desc">Go beyond one-word translations. All seven non-English-UI courses now include clear, learner-friendly English explanations on 100% of words.</p>
+          <ul class="v22-bullets" id="v22-bullets">
+            <li>100% coverage across Korean→English, Tagalog, Swahili &amp; Vietnamese courses</li>
+            <li>Turn English explanations ON or OFF anytime in Settings</li>
+            <li>New growth-review quiz: read the simple English explanation and pick the right word</li>
+          </ul>
+        </div>
+        <div class="v22-preview-box" aria-hidden="true">
+          <p class="v22-preview-word">bloom</p>
+          <p class="v22-preview-mean" lang="ko">꽃이 피다 · mamukadkad · kuchanua · nở hoa</p>
+          <div class="v22-preview-en">
+            <b>EN ·</b>
+            <span>to produce flowers</span>
+          </div>
+          <p class="v22-preview-foot" id="v22-foot">Settings › English explanations toggle · Build true word sense</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>2-Minute Level Test</h3>
+          <p>Estimates how many words you already know and starts you at the right tier across Levels 1–7.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Smart Spaced Repetition</h3>
+          <p>Water words at 1, 3, 7, 15, 35, and 90 days with listening, fill-in-the-blank, spelling, and explanation quizzes.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h4M9 9v6M14 9h3v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Hangul 101 &amp; Syllable Tiles</h3>
+          <p>Learn all 24 Korean letters with names and sounds from day one, and spell Korean words without needing a Korean keyboard.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke-linecap="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>15-Chapter Stories</h3>
+          <p>Read culturally tailored serialized stories packed with your words—tap any sentence for instant translation and audio.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>3 Vocabulary Games</h3>
+          <p>Lightning Match, 60-Second True or False, and Sentence Builder generated directly from your own planted words.</p>
+        </article>
+        <article class="feat-card">
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Offline, Private &amp; Free</h3>
+          <p>No account required. All progress stays safely on your device with per-course JSON backup and zero ads while studying.</p>
+        </article>
       </div>
     </div>
-    <div class="app">
-      <img class="icon" src="icons/vuontu-korean.png" alt="" width="60" height="60" loading="lazy" decoding="async">
-      <div>
-        <h3>Vườn Từ: Học tiếng Hàn EPS</h3>
-        <p>Học từ vựng tiếng Hàn với nghĩa tiếng Việt, gồm bảng chữ cái Hangul và từ vựng cho EPS-TOPIK. Ứng dụng độc lập, không liên kết với HRD Korea.</p>
-        <p class="tag">Vườn Từ: Tiếng Hàn nay là một khóa học trong ứng dụng WordGarden (<span lang="ko">워드가든</span>). Ở màn hình đầu tiên của ứng dụng, hãy chọn “Tiếng Việt” làm ngôn ngữ của bạn, rồi chọn “Tiếng Hàn”.</p>
-        <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/korean/">Trang tải ứng dụng</a></p>
-      </div>
-    </div>
-    <p class="links"><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/">Chính sách quyền riêng tư</a> · <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/support/">Hỗ trợ</a></p>
   </section>
 
-  <!-- Android 베타 칸: 내려받기 페이지와 같은 wordgarden-privacy/beta.json 의 com.wordgarden.app 을 따른다 (맨 아래 스크립트).
-       closed(기본값, 파일이 없거나 깨져도) = Gmail 주소를 메일로 받아 테스터 명단에 넣는다 · beta + 그룹 주소 = 그룹 가입 안내 · public = Google Play 로 바로.
-       앱이 public 이면 이 칸은 저절로 숨는다 (이 파일은 그대로 두고 beta.json 만 바꾼다). -->
-  <section id="beta">
-    <h2 lang="ko">Android 베타 참여</h2>
-    <p class="sub" lang="en">Join the Android beta of WordGarden (<span lang="ko">워드가든</span>)</p>
+  <!-- ===================== Screenshots Gallery (#screens) ===================== -->
+  <section class="section-pad section-alt" id="screens">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="screens-eyebrow">Inside the app</span>
+        <h2 id="screens-h2">Take a stroll through WordGarden</h2>
+        <p id="screens-sub">Click any screenshot to zoom in. Switch the language in the header to inspect that language’s native app screens.</p>
+      </div>
 
-    <div lang="ko">
-      <p>워드가든은 Google Play 에서 아직 비공개 테스트 중이에요 (아이폰은 App Store 에서 바로 받을 수 있어요). 정식으로 출시하려면 테스터 12명이 14일 동안 참여해야 해요. 참여는 무료예요.</p>
-      <ol>
-        <li data-mode="closed">Play 스토어에서 쓰는 Google(Gmail) 주소를 <a href="mailto:jpmajo2137@gmail.com?subject=Android%20%EB%B2%A0%ED%83%80%20%EC%B0%B8%EC%97%AC%20%28%EC%9B%8C%EB%93%9C%EA%B0%80%EB%93%A0%29&amp;body=Play%20%EC%8A%A4%ED%86%A0%EC%96%B4%EC%97%90%EC%84%9C%20%EC%93%B0%EB%8A%94%20Google%20%EA%B3%84%EC%A0%95%28Gmail%29%3A%20">jpmajo2137@gmail.com</a> 으로 보내 주세요. 테스터 명단에 넣고 답장 드릴게요. 받은 주소는 명단에 넣는 데에만 써요.</li>
-        <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">테스터 그룹에 가입</a>하세요. Play 스토어에서 쓰는 Google 계정으로 로그인한 뒤 'Join group'(그룹 가입)을 누르세요.</li>
-        <li><span data-mode="closed">답장을 받으면</span><span data-mode="beta" hidden>그다음</span> 아래에서 '참여'를 열고 '테스터 되기'를 누른 뒤, '설치'로 Google Play 에서 받으세요.</li>
-        <li>14일 동안 지우지 말고 가끔 열어 주세요. 그 사이에 테스트에서 나가면 14일을 처음부터 다시 세요.</li>
-      </ol>
+      <div class="gallery-controls">
+        <p class="gallery-hint" id="gallery-hint">Scroll horizontally or use the arrows</p>
+        <div class="gallery-arrows">
+          <button type="button" class="icon-btn" id="gallery-prev" aria-label="Previous screenshots">←</button>
+          <button type="button" class="icon-btn" id="gallery-next" aria-label="Next screenshots">→</button>
+        </div>
+      </div>
+
+      <div class="gallery-track" id="gallery-track"></div>
     </div>
+  </section>
 
-    <ul class="optin">
-      <li data-pkg="com.wordgarden.app"><img src="icons/wordgarden.png" alt="" width="32" height="32" loading="lazy" decoding="async"><span class="name">WordGarden (<span lang="ko">워드가든</span>)</span><a href="https://play.google.com/apps/testing/com.wordgarden.app"><span lang="ko">참여</span> · Opt in</a><a href="https://play.google.com/store/apps/details?id=com.wordgarden.app"><span lang="ko">설치</span> · Install</a></li>
-    </ul>
+  <!-- ===================== 8 Courses Directory (#courses) ===================== -->
+  <section class="section-pad" id="courses">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="courses-eyebrow">One app, eight courses</span>
+        <h2 id="courses-h2">Learn English or Korean in the language you speak</h2>
+        <p id="courses-sub">Since version 2.0, WordGarden, Hardin ng Salita, Bustani ya Maneno, Vườn Từ, and WordGarden: Korean all live inside one app. Each course keeps its own progress, and you can switch anytime in Settings.</p>
+      </div>
 
-    <div id="beta-en" lang="en">
-      <p>WordGarden is still in closed testing on Google Play (on iPhone it is on the App Store). To launch publicly, the app needs 12 testers who stay in the test for 14 days. Joining is free.</p>
-      <ol>
-        <li data-mode="closed">Email the Google (Gmail) address you use on the Play Store to <a href="mailto:jpmajo2137@gmail.com?subject=Android%20beta%20%28WordGarden%29&amp;body=Google%20account%20%28Gmail%29%20I%20use%20on%20the%20Play%20Store%3A%20">jpmajo2137@gmail.com</a>. I'll add you to the tester list and reply. Your address is used only for that list.</li>
-        <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">Join the tester group</a>. Sign in with the Google account you use on the Play Store, then tap “Join group”.</li>
-        <li><span data-mode="closed">After my reply, open</span><span data-mode="beta" hidden>Open</span> “Opt in” above and tap “Become a tester”, then get the app with “Install”.</li>
-        <li>Keep the app installed for 14 days and open it now and then. Leaving the test restarts the 14 days.</li>
-      </ol>
+      <div class="courses-grid">
+        <!-- Korean -> English -->
+        <article class="course-family featured" id="wordgarden" lang="ko">
+          <div class="cf-head">
+            <img class="cf-icon" src="icons/wordgarden.png" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3>워드가든 (한국어 → English)</h3>
+              <p class="cf-sub">영단어 15,440개 · 7단계 · v2.2 전 단어 쉬운 영어 해설 · 스토어 이름 ‘워드가든: 영단어 암기·영어 단어 외우기’</p>
+            </div>
+          </div>
+          <p class="cf-desc">2분 어휘력 테스트로 내 수준부터 시작하고, 잊을 때쯤 물을 주는 망각곡선 복습으로 영단어를 꽃처럼 키워요. 영어 이야기 15장과 영단어 게임 3가지로 배운 단어를 다시 만나고, v2.2에서는 모든 단어에 쉬운 영어 해설과 해설 복습 퀴즈까지 더했어요. 앱 첫 화면에서 ‘영어’를 고르면 시작됩니다.</p>
+          <div class="cf-links">
+            <a href="https://apps.apple.com/kr/app/id6825913827">App Store</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/app/">내려받기 페이지</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/">개인정보처리방침</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/support/">고객 지원</a>
+          </div>
+        </article>
+
+        <!-- Tagalog -> English & Korean -->
+        <article class="course-family" id="hardin" lang="en">
+          <div class="cf-head">
+            <img class="cf-icon" src="icons/hardin-english.png" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3>Hardin ng Salita</h3>
+              <p class="cf-sub"><span lang="fil">Matuto ng English at Korean sa Tagalog</span> · 2 courses inside WordGarden</p>
+            </div>
+          </div>
+          <div class="cf-sublist">
+            <div class="cf-subcard">
+              <div class="cf-subcard-top">
+                <img src="icons/hardin-english.png" alt="" width="38" height="38" loading="lazy" decoding="async">
+                <h4>Tagalog → English</h4>
+              </div>
+              <p>15,440 English words with Tagalog meanings, v2.2 simple English explanations, audio, stories and memory tips. Offline.</p>
+              <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/english/">Download page →</a>
+            </div>
+            <div class="cf-subcard">
+              <div class="cf-subcard-top">
+                <img src="icons/hardin-korean.png" alt="" width="38" height="38" loading="lazy" decoding="async">
+                <h4>Tagalog → Korean</h4>
+              </div>
+              <p>15,259 Korean words incl. 1,300+ work &amp; EPS-TOPIK / TOPIK terms, Hangul 101, and v2.2 English explanations.</p>
+              <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/korean/">Download page →</a>
+            </div>
+          </div>
+          <p class="cf-note">Independent app: not affiliated with HRD Korea, the Department of Migrant Workers (DMW) or NIIED (TOPIK). <span lang="fil">Sa unang screen ng WordGarden, piliin ang “Tagalog”, tapos piliin ang “English” o “Korean”.</span></p>
+          <div class="cf-links">
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/">Privacy policy</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/support/">Support</a>
+          </div>
+        </article>
+
+        <!-- Vietnamese -> English & Korean -->
+        <article class="course-family" id="vuontu" lang="vi">
+          <div class="cf-head">
+            <img class="cf-icon" src="icons/vuontu-english.png" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3>Vườn Từ</h3>
+              <p class="cf-sub">Học từ vựng Tiếng Anh &amp; Tiếng Hàn bằng tiếng Việt · 2 khóa học trong WordGarden</p>
+            </div>
+          </div>
+          <div class="cf-sublist">
+            <div class="cf-subcard">
+              <div class="cf-subcard-top">
+                <img src="icons/vuontu-english.png" alt="" width="38" height="38" loading="lazy" decoding="async">
+                <h4>Tiếng Việt → Tiếng Anh</h4>
+              </div>
+              <p>Hơn 15.000 từ tiếng Anh có nghĩa tiếng Việt, giải nghĩa tiếng Anh v2.2, ôn tập ngắt quãng, truyện và trò chơi offline.</p>
+              <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/english/">Trang tải ứng dụng →</a>
+            </div>
+            <div class="cf-subcard">
+              <div class="cf-subcard-top">
+                <img src="icons/vuontu-korean.png" alt="" width="38" height="38" loading="lazy" decoding="async">
+                <h4>Tiếng Việt → Tiếng Hàn EPS</h4>
+              </div>
+              <p>Hơn 15.000 từ tiếng Hàn, bảng chữ cái Hangul, ghép âm tiết và từ vựng cho EPS-TOPIK / TOPIK.</p>
+              <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/korean/">Trang tải ứng dụng →</a>
+            </div>
+          </div>
+          <p class="cf-note">Ứng dụng độc lập, không liên kết với HRD Korea. Ở màn hình đầu tiên của WordGarden, hãy chọn “Tiếng Việt”, rồi chọn “Tiếng Anh” hoặc “Tiếng Hàn”.</p>
+          <div class="cf-links">
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/">Chính sách quyền riêng tư</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/support/">Hỗ trợ</a>
+          </div>
+        </article>
+
+        <!-- Swahili -> English & Korean -->
+        <article class="course-family" id="bustani" lang="sw">
+          <div class="cf-head">
+            <img class="cf-icon" src="icons/bustani.png" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3>Bustani ya Maneno</h3>
+              <p class="cf-sub">Kiswahili → Kiingereza &amp; Kikorea · Kozi 2 ndani ya WordGarden</p>
+            </div>
+          </div>
+          <p class="cf-desc">Jifunze Kiingereza (A1–C2) na Kikorea (pamoja na herufi 24 za Hangul) kwa Kiswahili, hata bila intaneti — ikiwa na hadithi ya Amani kutoka Mombasa hadi Seoul, methali za kila siku, na swichi ya Maelezo kwa Kiingereza (v2.2).</p>
+          <p class="cf-note">Kwenye skrini ya kwanza ya programu ya WordGarden (<span lang="ko">워드가든</span>), chagua “Kiswahili” kuwa lugha yako, kisha uchague Kiingereza au Kikorea.</p>
+          <div class="cf-links">
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/app/">Pakua</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Sera ya faragha</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/support/">Msaada</a>
+          </div>
+        </article>
+
+        <!-- English -> Korean -->
+        <article class="course-family" id="wordgarden-korean" lang="en">
+          <div class="cf-head">
+            <img class="cf-icon" src="icons/wordgarden-korean.png" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3>WordGarden: Korean Vocabulary</h3>
+              <p class="cf-sub">English → 한국어 · Learn Korean words &amp; Hangul for English speakers</p>
+            </div>
+          </div>
+          <p class="cf-desc">Start with Hangul 101 (24 letters with names and sounds), spell with syllable tiles with no Korean keyboard needed, and grow 15,000+ words through spaced repetition, <em>A Year in Seoul</em> (15 story chapters), and 3 games. Works offline.</p>
+          <p class="cf-note">On the first screen of the WordGarden (<span lang="ko">워드가든</span>) app, choose “English” as the language you speak, then choose “Korean”.</p>
+          <div class="cf-links">
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/app/">Download page</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/">Privacy policy</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/support/">Support</a>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <hr>
-    <p class="tip" lang="ko">'참여'와 '설치' 링크는 Google 계정이 테스터로 등록된 뒤에, 그 계정으로 로그인해야 열려요. 그렇지 않으면 Google Play 에 '찾을 수 없음'(Not Found)이 나와요. 등록된 뒤에도 10~30분쯤 걸릴 수 있어요.</p>
-    <p class="tip" lang="en">The “Opt in” and “Install” links work only after your Google account has been added as a tester, and only while you are signed in with that account. Otherwise Google Play shows “Not Found”. After you are added, it can still take 10–30 minutes.</p>
-    <p class="tip" lang="ko">의견은 앱 오른쪽 위 ⚙ 설정 › '의견 보내기'(타갈로그어 과정은 'Magpadala ng puna')로 보내 주세요.<span data-mode="beta" hidden> 그룹 링크에서 'You don't have permission' 이 보이면 Google 에 로그인하지 않은 상태예요. 위쪽 Sign in(로그인)을 누른 뒤 그룹 링크를 다시 여세요.</span></p>
-    <p class="tip" lang="en">Feedback: ⚙ Settings › “의견 보내기” (Korean course) or “Magpadala ng puna” (Tagalog courses) opens an email to me, or write to <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a>.<span data-mode="beta" hidden> Seeing “You don't have permission” on the group page? You are not signed in to Google: tap Sign in at the top of the page, then open the group link again.</span></p>
+  <!-- ===================== Android Beta Section (#beta — auto-hides when beta.json sets com.wordgarden.app = "public") ===================== -->
+  <section class="section-pad" id="beta">
+    <div class="wrap">
+      <div class="beta-card">
+        <div class="beta-head">
+          <h2 id="beta-title">Android 베타 테스트 참여 · Join the Android Beta</h2>
+          <span class="beta-status" id="beta-status">Google Play 프로덕션 심사 대기 중</span>
+        </div>
+
+        <div class="beta-cols">
+          <div class="beta-col" lang="ko">
+            <h3>한국어 안내</h3>
+            <p>워드가든은 iPhone에서는 App Store에서 바로 받을 수 있으며, Android는 Google Play 비공개 테스트를 마치고 정식 출시(프로덕션) 심사 대기 중이에요. 지금 바로 참여하려면 아래 절차를 따라 주세요 (무료).</p>
+            <ol>
+              <li data-mode="closed">Play 스토어에서 쓰는 Google(Gmail) 주소를 <a href="mailto:jpmajo2137@gmail.com?subject=Android%20%EB%B2%A0%ED%83%80%20%EC%B0%B8%EC%97%AC%20%28%EC%9B%8C%EB%93%9C%EA%B0%80%EB%93%A0%29&amp;body=Play%20%EC%8A%A4%ED%86%A0%EC%96%B4%EC%97%90%EC%84%9C%20%EC%93%B0%EB%8A%94%20Google%20%EA%B3%84%EC%A0%95%28Gmail%29%3A%20">jpmajo2137@gmail.com</a> 으로 보내 주세요. 테스터 명단에 넣고 답장 드릴게요.</li>
+              <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">테스터 그룹에 가입</a>하세요. Play 스토어 계정으로 로그인한 뒤 ‘Join group’을 누르세요.</li>
+              <li><span data-mode="closed">답장을 받으면</span><span data-mode="beta" hidden>그다음</span> 아래 ‘참여 · Opt in’에서 ‘테스터 되기’를 누른 뒤, ‘설치 · Install’로 Google Play에서 받으세요.</li>
+              <li>의견은 앱 오른쪽 위 ⚙ 설정 › ‘의견 보내기’ 또는 메일로 언제든 보내 주세요.</li>
+            </ol>
+          </div>
+
+          <div class="beta-col" id="beta-en" lang="en">
+            <h3>English Guide</h3>
+            <p>WordGarden is live on the iPhone App Store. On Android, closed testing is complete and Google Play production access is currently under review. You can still join the beta for free:</p>
+            <ol>
+              <li data-mode="closed">Email the Google (Gmail) address you use on the Play Store to <a href="mailto:jpmajo2137@gmail.com?subject=Android%20beta%20%28WordGarden%29&amp;body=Google%20account%20%28Gmail%29%20I%20use%20on%20the%20Play%20Store%3A%20">jpmajo2137@gmail.com</a>. I’ll add you to the tester list and reply.</li>
+              <li data-mode="beta" hidden><a class="grp" href="https://groups.google.com/">Join the tester group</a>. Sign in with your Play Store Google account and tap “Join group”.</li>
+              <li><span data-mode="closed">After my reply, open</span><span data-mode="beta" hidden>Open</span> “Opt in” below and tap “Become a tester”, then install via “Install”.</li>
+              <li>Send feedback anytime from ⚙ Settings inside the app or by emailing <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a>.</li>
+            </ol>
+          </div>
+        </div>
+
+        <ul class="optin-bar">
+          <li data-pkg="com.wordgarden.app">
+            <img src="icons/wordgarden.png" alt="" width="36" height="36" loading="lazy" decoding="async">
+            <span class="name">WordGarden (<span lang="ko">워드가든</span>) · Android</span>
+            <a href="https://play.google.com/apps/testing/com.wordgarden.app"><span lang="ko">참여</span> · Opt in</a>
+            <a href="https://play.google.com/store/apps/details?id=com.wordgarden.app"><span lang="ko">설치</span> · Install</a>
+            <a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/beta/" id="beta-guide-btn">Step-by-step beta guide (EN · SW · KO)</a>
+          </li>
+        </ul>
+
+        <div class="beta-tips">
+          <p lang="ko">‘참여’와 ‘설치’ 링크는 테스터로 등록된 Google 계정으로 로그인해야 열립니다. 등록 직후 반영까지 시간이 걸릴 수 있어요.</p>
+          <p lang="en">The “Opt in” and “Install” links work only while signed in with a registered tester Google account; activation can take some time after joining.</p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
-<script>
-// Android 베타 칸은 내려받기 페이지와 같은 beta.json 을 따른다 (같은 규칙: 그룹 주소는 groups.google.com/g/<이름> 만 받는다).
-// 정적 HTML 이 기본값(closed = 메일 신청)이라, 파일이 없거나 깨졌거나 스크립트가 안 돌아도 맞는 안내가 보인다
-(function () {
-  var GROUP = /^https:\/\/groups\.google\.com\/g\/[a-z0-9][a-z0-9._-]{0,62}\/?$/
-  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)) }
-  function apply(cfg) {
-    if (!cfg || typeof cfg !== 'object' || !cfg.apps || typeof cfg.apps !== 'object') return
-    var group = typeof cfg.group === 'string' && GROUP.test(cfg.group) ? cfg.group : null
-    var open = 0, allBeta = true
-    all('[data-pkg]').forEach(function (el) {
-      var pkg = el.getAttribute('data-pkg'), s = cfg.apps[pkg]
-      if (s === 'public') {
-        if (el.tagName === 'A') { el.href = 'https://play.google.com/store/apps/details?id=' + pkg; el.textContent = el.getAttribute('data-play') }
-        else el.hidden = true
-      } else if (el.tagName === 'LI') {
-        open++
-        if (s !== 'beta') allBeta = false
-      }
-    })
-    var beta = document.getElementById('beta')
-    if (!open) { beta.hidden = true; return }
-    // 남은 앱이 모두 그룹으로 받을 때만 그룹 안내 (하나라도 메일이면 메일 안내 하나로)
-    var mode = group && allBeta ? 'beta' : 'closed'
-    all('#beta [data-mode]').forEach(function (el) { el.hidden = el.getAttribute('data-mode') !== mode })
-    if (mode === 'beta') all('#beta a.grp').forEach(function (a) { a.href = group })
-  }
-  if (window.fetch) {
-    fetch('/wordgarden-privacy/beta.json', { cache: 'no-cache', credentials: 'omit' })
-      .then(function (r) { return r.ok ? r.json() : null })
-      .then(apply)
-      .catch(function () {})
-  }
-})()
-</script>
+
+<!-- ===================== Lightbox Modal ===================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+  <div class="lightbox-inner">
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="lightbox-bar">
+      <button type="button" class="lightbox-btn" id="lightbox-prev" aria-label="Previous screenshot">←</button>
+      <span id="lightbox-caption">1 / 8</span>
+      <button type="button" class="lightbox-btn" id="lightbox-next" aria-label="Next screenshot">→</button>
+      <button type="button" class="lightbox-btn" id="lightbox-close" aria-label="Close">✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="icons/wordgarden.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+          <span id="footer-brand-name">WordGarden</span>
+        </div>
+        <p class="footer-meta" id="footer-tagline">One vocabulary app, eight courses — words that grow like a garden</p>
+        <p class="footer-meta"><span id="footer-dev">Developer: Joung Hun Park (박종훈)</span> · <a href="mailto:jpmajo2137@gmail.com">jpmajo2137@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footer-col-app">App &amp; Guides</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/app/id6825913827">App Store (iOS)</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/app/" lang="ko">워드가든 내려받기</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/beta/">Android Beta Guide (EN · SW · KO)</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/app-ads.txt">app-ads.txt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footer-col-legal">Privacy &amp; Support</h4>
+        <ul>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/" lang="ko">개인정보처리방침 (Privacy Policy)</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/support/" lang="ko">고객 지원 (Support)</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/hardin/">Hardin ng Salita · Privacy</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/bustani/">Bustani ya Maneno · Privacy</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/vuontu/">Vườn Từ · Privacy</a></li>
+          <li><a href="https://jpmajo2137-bot.github.io/wordgarden-privacy/korean/">WordGarden: Korean · Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span id="footer-privacy-note">This website uses no cookies, no analytics, and no tracking.</span>
+      <span>© Joung Hun Park · WordGarden</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>
