@@ -789,6 +789,18 @@ html[lang="sw"] .section-head h2 {
 }
 .beta-tips p { margin: 0; }
 
+/* ===================== Direct Updates / Owned Channel ===================== */
+.owned-card {
+  background: var(--surface); border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius-lg); padding: clamp(22px, 4vw, 36px);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 24px; box-shadow: var(--shadow-sm);
+}
+.owned-card > div:first-child { flex: 1 1 380px; }
+.owned-card h2 { margin: 6px 0 10px; font-size: clamp(21px, 2.6vw, 27px); line-height: 1.25; }
+.owned-card p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.65; }
+.owned-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
 /* ===================== Footer ===================== */
 .site-footer {
   border-top: 1px solid var(--line); background: var(--surface);

@@ -329,6 +329,15 @@
         status: 'Google Play 프로덕션 심사 대기 중',
         guideBtn: '상세 참여 가이드 (한·영·스와힐리어)'
       },
+      owned: {
+        eyebrow: '직접 연결 채널',
+        h2: '스토어를 거치지 않아도 언제나 연결돼요',
+        sub: 'wordgardenapp.com을 북마크해 두거나 이메일로 새 과정·주요 업데이트 소식을 받아보세요. 광고 스팸 없이 중요한 업데이트만 전하며, 답장 한 번으로 언제든 수신을 멈출 수 있어요.',
+        mailLabel: '업데이트 소식 메일 신청',
+        mailSubject: '[워드가든] 새 버전·과정 소식 받기 신청',
+        mailBody: '워드가든의 주요 업데이트 및 새 과정 출시 소식을 이메일로 받고 싶습니다. (언제든 답장으로 수신 거부를 요청할 수 있습니다.)',
+        supportLabel: '고객 지원 & 백업 FAQ'
+      },
       footer: {
         tagline: '하나의 단어 앱, 여덟 과정 — 외운 만큼 꽃이 피는 정원',
         dev: '개발자: 박종훈 (Joung Hun Park)',
@@ -436,6 +445,15 @@
         title: 'Join the Android Beta',
         status: 'Google Play production review in progress',
         guideBtn: 'Step-by-step beta guide (EN · SW · KO)'
+      },
+      owned: {
+        eyebrow: 'Direct channel',
+        h2: 'Stay connected beyond app stores',
+        sub: 'Bookmark wordgardenapp.com or request email release notes so you never miss new courses, study features, or backup guides—with zero spam and one-reply unsubscribe.',
+        mailLabel: 'Get update emails',
+        mailSubject: '[WordGarden] Release Updates Opt-in',
+        mailBody: 'Please notify me by email when major WordGarden updates or new courses launch. (I can reply anytime to unsubscribe.)',
+        supportLabel: 'Support & backup FAQ'
       },
       footer: {
         tagline: 'One vocabulary app, eight courses — words that grow like a garden',
@@ -545,6 +563,15 @@
         status: 'Sinusuri na ang Google Play production',
         guideBtn: 'Gabay sa beta (EN · SW · KO)'
       },
+      owned: {
+        eyebrow: 'Direktang koneksyon',
+        h2: 'Manatiling konektado sa opisyal na website',
+        sub: 'I-bookmark ang wordgardenapp.com o humiling ng email tungkol sa mga bagong kurso at malalaking update — walang spam at puwedeng ipahinto anumang oras.',
+        mailLabel: 'Makatanggap ng update sa email',
+        mailSubject: '[WordGarden] Release Updates Opt-in (TL)',
+        mailBody: 'Pakibalitaan ako sa email kapag may bagong kurso o mahalagang update sa WordGarden / Hardin ng Salita.',
+        supportLabel: 'Suporta at Backup FAQ'
+      },
       footer: {
         tagline: 'Isang app, walong kurso — palaguin ang mga salita tulad ng hardin',
         dev: 'Developer: Joung Hun Park (박종훈)',
@@ -653,6 +680,15 @@
         status: 'Ukaguzi wa Google Play unaendelea',
         guideBtn: 'Mwongozo wa hatua kwa hatua (EN · SW · KO)'
       },
+      owned: {
+        eyebrow: 'Mawasiliano ya moja kwa moja',
+        h2: 'Endelea kuwasiliana nasi moja kwa moja',
+        sub: 'Hifadhi wordgardenapp.com au omba taarifa za matoleo mapya na kozi mpya kwa barua pepe — bila barua taka na unaweza kujiondoa wakati wowote.',
+        mailLabel: 'Pata taarifa kwa barua pepe',
+        mailSubject: '[WordGarden] Release Updates Opt-in (SW)',
+        mailBody: 'Tafadhali nijulishe kwa barua pepe matoleo makuu au kozi mpya za WordGarden / Bustani ya Maneno zitakapotoka.',
+        supportLabel: 'Msaada na Maswali'
+      },
       footer: {
         tagline: 'Programu moja, kozi nane — panda maneno, vuna lugha',
         dev: 'Msanidi: Joung Hun Park (박종훈)',
@@ -760,6 +796,15 @@
         title: 'Tham gia thử nghiệm Android',
         status: 'Đang chờ Google Play duyệt phát hành chính thức',
         guideBtn: 'Hướng dẫn chi tiết (EN · SW · KO)'
+      },
+      owned: {
+        eyebrow: 'Kênh kết nối trực tiếp',
+        h2: 'Luôn kết nối trực tiếp với WordGarden',
+        sub: 'Lưu địa chỉ wordgardenapp.com hoặc đăng ký nhận email khi có khóa học và bản cập nhật lớn — không thư rác, hủy nhận bất cứ lúc nào chỉ bằng một email trả lời.',
+        mailLabel: 'Nhận thông báo cập nhật qua email',
+        mailSubject: '[WordGarden] Đăng ký nhận tin cập nhật (VI)',
+        mailBody: 'Vui lòng gửi thông báo qua email cho tôi khi WordGarden / Vườn Từ có bản cập nhật lớn hoặc khóa học mới.',
+        supportLabel: 'Hỗ trợ & Sao lưu'
       },
       footer: {
         tagline: 'Một ứng dụng, tám khóa học — trồng từ vựng như chăm vườn',
@@ -906,6 +951,16 @@
     $('beta-title').textContent = t.beta.title
     $('beta-status').textContent = t.beta.status
     $('beta-guide-btn').textContent = t.beta.guideBtn
+
+    // Owned channel
+    if (t.owned && $('owned-eyebrow')) {
+      $('owned-eyebrow').textContent = t.owned.eyebrow
+      $('owned-h2').textContent = t.owned.h2
+      $('owned-sub').textContent = t.owned.sub
+      $('owned-mail-label').textContent = t.owned.mailLabel
+      $('owned-mail-btn').href = 'mailto:jpmajo2137@gmail.com?subject=' + encodeURIComponent(t.owned.mailSubject) + '&body=' + encodeURIComponent(t.owned.mailBody)
+      $('owned-support-label').textContent = t.owned.supportLabel
+    }
 
     // Footer
     $('footer-brand-name').textContent = t.brand
