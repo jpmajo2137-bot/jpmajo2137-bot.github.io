@@ -1091,7 +1091,7 @@
     track.innerHTML = cfg.alts.map(function (alt, idx) {
       var n = idx + 1
       return '<button type="button" class="shot-item" data-lightbox="' + idx + '" aria-label="' + escapeHtml(alt) + '">'
-        + '<img src="screenshots/' + state.lang + '/s' + n + '.webp" alt="' + escapeHtml(alt) + '" width="540" height="960" loading="lazy" decoding="async">'
+        + '<img src="screenshots/' + state.lang + '/s' + n + '.webp" alt="' + escapeHtml(alt) + '" width="1080" height="1920" loading="lazy" decoding="async">'
         + '</button>'
     }).join('')
   }
