@@ -189,8 +189,8 @@
     },
     sw: {
       hero: [
-        { i: 4, label: 'Bustani' },
-        { i: 3, label: 'Kipimo 2m' },
+        { i: 3, label: 'Bustani' },
+        { i: 4, label: 'Kipimo 2m' },
         { i: 5, label: 'Hangul 24' },
         { i: 6, label: 'Hadithi' },
         { i: 1, label: 'Kozi 8' }
@@ -198,8 +198,8 @@
       alts: [
         'Kiingereza na Kikorea — Kila neno limeelezwa kwa Kiswahili',
         'Badilisha lugha wakati wowote',
-        'Unajua maneno mangapi? Kipimo cha dakika 2',
         'Panda maneno, vuna lugha — hata bila intaneti',
+        'Unajua maneno mangapi? Kipimo cha dakika 2',
         'Unaweza kusoma Kikorea — Hangul ina herufi 24 tu',
         'Hadithi ya Amani, Mombasa hadi Seoul',
         'Jifunze kwa kucheza — michezo ya maneno',
