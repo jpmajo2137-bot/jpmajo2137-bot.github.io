@@ -326,7 +326,7 @@
       },
       beta: {
         title: 'Android 베타 테스트 참여',
-        status: 'Google Play 프로덕션 심사 대기 중',
+        status: 'Android: Google Play 비공개 테스트 중 · 무료 참여',
         guideBtn: '상세 참여 가이드 (한·영·스와힐리어)'
       },
       owned: {
@@ -336,7 +336,8 @@
         mailLabel: '업데이트 소식 메일 신청',
         mailSubject: '[워드가든] 새 버전·과정 소식 받기 신청',
         mailBody: '워드가든의 주요 업데이트 및 새 과정 출시 소식을 이메일로 받고 싶습니다. (언제든 답장으로 수신 거부를 요청할 수 있습니다.)',
-        supportLabel: '고객 지원 & 백업 FAQ'
+        supportLabel: '고객 지원 & 백업 FAQ',
+        note: '업데이트 소식은 신청하신 분께만 보내고, 메일 주소는 그 용도로만 쓰며, 답장하시면 언제든 그만 받으실 수 있어요.'
       },
       footer: {
         tagline: '하나의 단어 앱, 여덟 과정 — 외운 만큼 꽃이 피는 정원',
@@ -443,7 +444,7 @@
       },
       beta: {
         title: 'Join the Android Beta',
-        status: 'Google Play production review in progress',
+        status: 'Android: closed beta on Google Play — join free',
         guideBtn: 'Step-by-step beta guide (EN · SW · KO)'
       },
       owned: {
@@ -453,7 +454,8 @@
         mailLabel: 'Get update emails',
         mailSubject: '[WordGarden] Release Updates Opt-in',
         mailBody: 'Please notify me by email when major WordGarden updates or new courses launch. (I can reply anytime to unsubscribe.)',
-        supportLabel: 'Support & backup FAQ'
+        supportLabel: 'Support & backup FAQ',
+        note: 'We send update news only to people who ask for it, use your address only for that, and you can stop at any time by replying.'
       },
       footer: {
         tagline: 'One vocabulary app, eight courses — words that grow like a garden',
@@ -560,7 +562,7 @@
       },
       beta: {
         title: 'Sumali sa Android Beta',
-        status: 'Sinusuri na ang Google Play production',
+        status: 'Android: closed beta sa Google Play — libre ang pagsali',
         guideBtn: 'Gabay sa beta (EN · SW · KO)'
       },
       owned: {
@@ -570,7 +572,8 @@
         mailLabel: 'Makatanggap ng update sa email',
         mailSubject: '[WordGarden] Release Updates Opt-in (TL)',
         mailBody: 'Pakibalitaan ako sa email kapag may bagong kurso o mahalagang update sa WordGarden / Hardin ng Salita.',
-        supportLabel: 'Suporta at Backup FAQ'
+        supportLabel: 'Suporta at Backup FAQ',
+        note: 'Nagpapadala lang kami ng balita tungkol sa mga update sa mga humiling nito, ginagamit lang namin ang address mo para rito, at puwede mo itong ipahinto anumang oras sa pamamagitan ng pag-reply.'
       },
       footer: {
         tagline: 'Isang app, walong kurso — palaguin ang mga salita tulad ng hardin',
@@ -677,7 +680,7 @@
       },
       beta: {
         title: 'Jiunge na majaribio ya Android',
-        status: 'Ukaguzi wa Google Play unaendelea',
+        status: 'Android: majaribio kwenye Google Play — kujiunga ni bure',
         guideBtn: 'Mwongozo wa hatua kwa hatua (EN · SW · KO)'
       },
       owned: {
@@ -687,7 +690,8 @@
         mailLabel: 'Pata taarifa kwa barua pepe',
         mailSubject: '[WordGarden] Release Updates Opt-in (SW)',
         mailBody: 'Tafadhali nijulishe kwa barua pepe matoleo makuu au kozi mpya za WordGarden / Bustani ya Maneno zitakapotoka.',
-        supportLabel: 'Msaada na Maswali'
+        supportLabel: 'Msaada na Maswali',
+        note: 'Tunatuma taarifa za matoleo mapya kwa walioziomba tu, tunatumia anwani yako kwa ajili hiyo tu, na unaweza kuacha kuzipokea wakati wowote kwa kujibu barua pepe.'
       },
       footer: {
         tagline: 'Programu moja, kozi nane — panda maneno, vuna lugha',
@@ -794,7 +798,7 @@
       },
       beta: {
         title: 'Tham gia thử nghiệm Android',
-        status: 'Đang chờ Google Play duyệt phát hành chính thức',
+        status: 'Android: đang thử nghiệm kín trên Google Play — tham gia miễn phí',
         guideBtn: 'Hướng dẫn chi tiết (EN · SW · KO)'
       },
       owned: {
@@ -804,7 +808,8 @@
         mailLabel: 'Nhận thông báo cập nhật qua email',
         mailSubject: '[WordGarden] Đăng ký nhận tin cập nhật (VI)',
         mailBody: 'Vui lòng gửi thông báo qua email cho tôi khi WordGarden / Vườn Từ có bản cập nhật lớn hoặc khóa học mới.',
-        supportLabel: 'Hỗ trợ & Sao lưu'
+        supportLabel: 'Hỗ trợ & Sao lưu',
+        note: 'Chúng tôi chỉ gửi tin cập nhật cho người đã đăng ký, chỉ dùng địa chỉ email của bạn vào việc đó, và bạn có thể ngừng nhận bất cứ lúc nào bằng cách trả lời email.'
       },
       footer: {
         tagline: 'Một ứng dụng, tám khóa học — trồng từ vựng như chăm vườn',
@@ -960,6 +965,7 @@
       $('owned-mail-label').textContent = t.owned.mailLabel
       $('owned-mail-btn').href = 'mailto:jpmajo2137@gmail.com?subject=' + encodeURIComponent(t.owned.mailSubject) + '&body=' + encodeURIComponent(t.owned.mailBody)
       $('owned-support-label').textContent = t.owned.supportLabel
+      if ($('owned-note')) $('owned-note').textContent = t.owned.note
       // the support page in the visitor's language (the Korean page stays the default in index.html)
       var supportPath = { ko: 'support/', en: 'korean/support/', fil: 'hardin/support/', sw: 'bustani/support/', vi: 'vuontu/support/' }[state.lang]
       if ($('owned-support-btn') && supportPath) $('owned-support-btn').href = 'https://wordgardenapp.com/wordgarden-privacy/' + supportPath
