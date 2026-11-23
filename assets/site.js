@@ -960,6 +960,9 @@
       $('owned-mail-label').textContent = t.owned.mailLabel
       $('owned-mail-btn').href = 'mailto:jpmajo2137@gmail.com?subject=' + encodeURIComponent(t.owned.mailSubject) + '&body=' + encodeURIComponent(t.owned.mailBody)
       $('owned-support-label').textContent = t.owned.supportLabel
+      // the support page in the visitor's language (the Korean page stays the default in index.html)
+      var supportPath = { ko: 'support/', en: 'korean/support/', fil: 'hardin/support/', sw: 'bustani/support/', vi: 'vuontu/support/' }[state.lang]
+      if ($('owned-support-btn') && supportPath) $('owned-support-btn').href = 'https://wordgardenapp.com/wordgarden-privacy/' + supportPath
     }
 
     // Footer
